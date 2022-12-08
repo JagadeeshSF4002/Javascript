@@ -1,0 +1,1 @@
+document.write("<p>External JS added succesfully</p>")
