@@ -1,0 +1,153 @@
+body
+{
+    background-color: #808080;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.Container
+{
+    margin: 70px auto;
+    background-color: #ffffff;
+    height: 400px;
+    width: 650px;
+    display: flex;
+}
+.Container>.first-content
+{
+    background-color: #9b3b41;
+    width: 50%;
+    margin: 0;
+    padding: 55px 40px;
+    box-sizing: border-box;
+}
+.Container>.first-content>h2
+{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.Container>.first-content>hr
+{
+    border: 0.1px solid;
+    color:#d4cfcf;
+}
+.Container>.first-content>h5
+{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.Container>.first-content>.icons
+{
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width:100%;
+    height: 35px;
+    cursor: pointer;
+}
+img
+{
+    position: relative;
+    left: -10px;
+}
+.Container>.first-content>.Facebook
+{
+    background-color: #39579a;
+    
+}
+.Container>.first-content>.Google
+{
+    background-color: #f24033;
+}
+.Container>.first-content>.Twitter
+{
+    background-color: #24a9e6;
+}
+.Container>.first-content>.icons>span
+{
+    margin-left: 5px;
+}
+
+.Container>.second-content
+{
+    color : #090600;
+    padding: 50px 30px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.Container>.second-content>h4
+{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.Container>.second-content>p
+{
+    color:#9b3b41;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.Container>.second-content>p>a
+{
+    color: #7bb3e1;
+    font-size: 14px;
+    text-decoration: none;
+}
+.Container>.second-content>form>input[type="text"]
+{
+    width: 100%;
+    margin: 7px 0px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;   
+    border: 1px solid #dedde3;
+}
+.Container>.second-content>form>input[type="text"]:focus
+{
+    outline: none;
+}
+.checkbox
+{
+    color:#666567;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.Container>.second-content>form>label>input[type="checkbox"]
+{
+    margin: 5px 3px 5px 0px;
+}
+.Container>.second-content>form>input[type="submit"]
+{
+    margin: 12px 0px;
+    width: 25%;
+    height: 32px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #f4364f;
+    border-style: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.Container>.second-content>.newAccount
+{
+    margin: 0px;
+}
+
+@media (max-width:680px)
+{
+    .Container
+    {
+        width: 500px;
+    }
+}
+@media (max-width:520px)
+{
+    .Container
+    {
+        width: 400px;
+    }
+    .Container>.second-content>form>input[type="submit"]
+    {
+        width: 35%;
+    }
+}

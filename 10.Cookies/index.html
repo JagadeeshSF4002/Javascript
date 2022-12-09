@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <select id="getColor" onchange="validateID()">
+        <option value="Select the option">Select the option</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+    </select>
+
+    <script type="text/javascript">
+        window.onload = function(){
+           if(document.cookie.length != 0)
+           {
+             var nameValueArray = document.cookie.split("=");
+             document.bgColor = nameValueArray[1];
+             document.getElementById('getColor').value = nameValueArray[1];
+           }  
+        }
+        function validateID()
+        {
+            var gettingColor = document.getElementById("getColor").value;
+            if(gettingColor != "Select the option")
+            {
+                document.bgColor = gettingColor;
+                document.cookie = "animal=pink;expires=Fri 23 Dec 2022 01:00:00 UTC;";
+                document.cookie = "Elephant=big;expires=Fri 23 Dec 2022 01:00:00 UTC;";
+                document.cookie = "color="+gettingColor+";expires=Fri 23 Dec 2022 01:00:00 UTC;";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="Container">
+        <div class="first-content">
+            <!--  -->
+            <img src="Images\Transparent-logo-white@2x.png" alt="" width="140" height="50">
+            <h2>Hello...</h2>
+            <hr color="#d4cfcf">
+            <h5>Login with social media</h5>
+            <div class="icons Facebook"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></div>
+            <div class="icons Google"><i class="fa-brands fa-google-plus-g"></i><span>Google+</span></div>
+            <div class="icons Twitter"><i class="fa-brands fa-twitter"></i><span>Twitter</span></div>
+        </div>
+        <div class="second-content">
+            <h4>Login</h4>
+            <p>Don't have an account? Create your <a href="#">account</a>.It's take less then a minutes </p>
+            <form action="" method="post">
+                <input type="text" name="username" id="UserName" placeholder="UserName" onkeyup="validateID('UserName')" onblur="validateID('UserName')" ><br>
+                <input type="text" name="password" id="PAssword"placeholder="Password" onkeyup="validateID('PAssword')" onblur="validateID('PAssword')" minlength="8"><br>
+                <label for="" class="checkbox">
+                    <input type="checkbox" name="RememberMe">Remember me<br>
+                </label>
+                <input type="submit" name="LOGIN" value="LOGIN"><br>
+            </form>
+            <p class="newAccount">Forgot password | Create a new account</p>
+        </div>
+    </div>
+    
+    <script src="JS/script.js" type="text/javascript">
+    </script>
+</body>
+</html>

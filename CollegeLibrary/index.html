@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Library</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="sections">
+            <div class="header">
+                <div class="img">
+                    <img src="Images/images.png" alt="Synfusion-Logo">        
+                </div>
+                <div class="header3">
+                    <h3>Library Portal</h3>
+                </div>
+                <div class="books">
+                    <h2><a href="#">Books</a></h2>
+                </div>
+            </div>
+            <div class="addBooks">
+                <h3>Add New Book</h3>
+                <form action="formInfo.html" id="forms">
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Category
+                            </label>
+                        </div>
+                        
+                        <select name="" id="option" class="choice">
+                            <option value="IT">IT</option>
+                        </select>
+                    </div>
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Book
+                            </label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="bookName"  onkeyup="validateFields('bookName',0)" onblur="validateFields('bookName',0)"  onkeypress="IsInputText('bookName',event,0)" />
+                        </div>
+                        <div class="errorC" style="color: rgb(179, 8, 8);"></div>
+                    </div>
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Author Mail
+                            </label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="mail" onkeyup="IsValidEmail('mail',1)" onblur="IsValidEmail('mail',1)" />
+                        </div>
+                        <div class="errorC" style="color: rgb(179, 8, 8);"></div>
+                    </div>
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Author Name
+                            </label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="name" onkeyup="validateFields('name',2)" onblur="validateFields('name',2)" onkeypress="IsInputText('name',event,2)" />
+                        </div>
+                        <div class="errorC" style="color: rgb(179, 8, 8);"></div>
+                    </div>
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Published
+                            </label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="published" onkeyup="PublishYear('published',3)" onblur="PublishYear('published',3)" maxlength="4" />
+                        </div>
+                        <div class="errorC" style="color: rgb(179, 8, 8);"></div>
+                    </div>
+                    
+                    <div class="input-control">
+                        <div class="label">
+                            <label for="" class="labelOfContent">
+                                Price
+                            </label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="price" onkeyup="Price('price',4)" onblur="Price('price',4)" />
+                        </div>
+                        <div class="errorC" style="color: rgb(179, 8, 8);"></div>
+                    </div>
+                        <input type="button" value="Save" onclick="setData()" class="Button"/>
+                        <input type="reset" value="Cancel" onclick="resetField()" class="Button"/>
+                        <input type="submit" name = "submit" value="Show" class="Button"/>
+                </form>
+            </div>
+            <div class="footer">
+                <h3>Copyrights@2022- present Syncfusion</h3>
+            </div>
+    </div>
+
+    <script src="JS/script.js" type="text/javascript">
+
+    </script>
+</body>
+</html>

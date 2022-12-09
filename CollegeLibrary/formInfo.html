@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Data From User</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="sections">
+        <div class="header">
+            <div class="img">
+                <img src="Images/images.png" alt="Synfusion-Logo">        
+            </div>
+            <div class="header3">
+                <h3>Library Portal</h3>
+            </div>
+            <div class="books">
+                <h2><a href="#">Books</a></h2>
+            </div>
+        </div>
+        <div class="getData">
+            <table border="1">
+                <tr>
+                    <th>Category</th>
+                    <th>Book</th>
+                    <th>Author Email</th>
+                    <th>Author Name</th>
+                    <th>Published</th>
+                    <th>Price</th>
+
+                </tr>
+                <tr>
+                    <td id="category"></td>
+
+                    <td id="book"></td>
+                    
+                    <td id="email"></td>
+                    
+                    <td id="Aname"></td>
+                    
+                    <td id="published"></td>
+                    
+                    <td id="price"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <h3>Copyrights@2022- present Syncfusion</h3>
+        </div>         
+    </div>
+
+    <script type="text/javascript">
+        var {category,bookName,mail,name,published,price}=JSON.parse(localStorage.getItem('formData'));
+        document.getElementById("category").innerHTML = category;
+        document.getElementById("book").innerHTML = bookName;
+        document.getElementById("email").innerHTML = mail;
+        document.getElementById("Aname").innerHTML = name;
+        document.getElementById("published").innerHTML = published;
+        document.getElementById("price").innerHTML = price;
+    </script>
+</body>
+</html>

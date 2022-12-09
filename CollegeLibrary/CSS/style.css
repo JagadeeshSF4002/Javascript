@@ -1,0 +1,92 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.header
+{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    border: 4px solid black;  
+    box-sizing: border-box;  
+}
+.header>.img
+{
+    margin: 20px;
+}
+.header>.img>img
+{
+    width: 25px;
+}
+.header>.header3
+{
+    margin: 20px;
+}
+.header>.books
+{
+    margin:15px 25px;
+}
+.header>.books>h2>a
+{
+    text-decoration: none;
+    font-size: 20px;
+}
+.addBooks
+{
+    width: 100%;
+    padding: 40px;
+    border: 4px solid black;
+    box-sizing: border-box;
+}
+.addBooks>form>button
+{
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+}
+.addBooks>form>.input-control
+{
+    margin-bottom:10px ;
+}
+.addBooks>h3
+{
+    margin: 10px;
+}
+.addBooks>form>.input-control>.choice
+{
+    width: 20%;
+    height: 35px;
+}
+.addBooks>form>.input-control>.textfield>input[type="text"]
+{
+    width: 20%;
+    height: 25px;
+}
+.addBooks>form>.Button
+{
+    width: 5%;
+    height: 30px;
+    margin: 5px;
+}
+.sections>.footer
+{
+    border: 4px solid black;
+    height: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.getData
+{
+    height: 420px;
+}
+td,th
+{
+    padding: 20px;
+    font-weight: 900;
+}
+td
+{
+    font-weight: normal;
+}

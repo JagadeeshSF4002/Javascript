@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate text field</title>
+</head>
+<body>
+    <form action="contact.html">
+        <label>
+            FirstName :
+           <input type="text" id="username" onkeyup="validateID('lastName')" onblur="validateID('username')" maxlength="20" >
+       </label>
+       <label>
+           LastName :
+          <input type="text" id="lastName" onkeyup="validateID('lastName')" onblur="validateID('lastName')">
+      </label>
+      <input type="submit" value="">button
+    </form>
+    
+
+   <div id="hell"></div>
+
+   <script type="text/javascript">
+    
+        
+        function validateID(controlID)
+        {
+            var flag = false
+            var control = document.getElementById(controlID);
+            if(control.value == "")
+            {
+                control.style.background = 'red';  
+                document.getElementById("hell").innerHTML="getHeee";
+            }
+            else
+            {
+                control.style.background= 'green';
+            }
+
+            if(flag)
+            {
+               
+            }
+        }
+
+
+   </script>
+    
+</body>
+</html>
